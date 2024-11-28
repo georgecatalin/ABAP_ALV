@@ -8,13 +8,15 @@
 *&---------------------------------------------------------------------*
 MODULE apply_conditional_formatting OUTPUT.
 
+  IF gv_text_input IS NOT INITIAL.
     IF gs_sales_item-itemcode CS gv_text_input.
-      gv_text_input = 'SUGI'.
 
-*    LOOP AT SCREEN.
-*        screen-intensified = 1.  " Choose desired color code
-*        MODIFY SCREEN.
-*    ENDLOOP.
+      LOOP AT SCREEN.
+        screen-intensified = 1.  " Choose desired color code
+        MODIFY SCREEN.
+      ENDLOOP.
+    ENDIF.
   ENDIF.
+
 
 ENDMODULE.

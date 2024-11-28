@@ -8,6 +8,7 @@
 CONTROLS: header_tbl TYPE TABLEVIEW USING SCREEN '0100',
           item_tbl TYPE TABLEVIEW USING SCREEN '0100'.
 
+* Types and global variables derived from them
 TYPES: BEGIN OF ty_sales_header,
         orderid TYPE vbak-vbeln,
         date TYPE vbak-erdat,
@@ -36,3 +37,8 @@ TYPES: BEGIN OF ty_sales_item,
 
 DATA: gt_sales_item TYPE TABLE OF ty_sales_item,
       gs_sales_item TYPE ty_sales_item.
+
+
+* Global variabiles not bound to types
+DATA: gv_current_line TYPE i,
+      gv_previous_line TYPE i.

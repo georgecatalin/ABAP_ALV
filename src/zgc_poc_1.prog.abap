@@ -14,3 +14,5 @@ INCLUDE ZGC_POC_1TOP.    " Global Data
 INCLUDE zgc_poc_1_status_0100o01.
 
 INCLUDE zgc_poc_1_initializeo01.
+
+INCLUDE zgc_poc_1_fill_in_item_tbli01.

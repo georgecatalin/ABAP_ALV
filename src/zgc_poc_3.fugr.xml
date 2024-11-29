@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Function Group associated to ZGC_POC_3</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZGC_POC_3TOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZGC_POC_3</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>GET_AVG_AMOUNT_2024</FUNCNAME>
+     <SHORT_TEXT>Calculate the average order amount for the year 2024</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>DISTRIBUTION_CHANNEL</PARAMETER>
+       <DEFAULT>&apos;10&apos;</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VTWEG</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>STARTDATE</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ERDAT</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>AVERAGE_AMOUNT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>NETWR</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>DISTRIBUTION_CHANNEL</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Distribution Channel</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>STARTDATE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Record Created On</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>AVERAGE_AMOUNT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Net Value in Document Currency</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

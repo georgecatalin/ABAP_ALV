@@ -10,14 +10,17 @@ MODULE apply_conditional_formatting OUTPUT.
 
   DATA: lv_average_amount TYPE p DECIMALS 2.
 
-  IF vbak-vtweg IS NOT INITIAL.
+  IF gv_distribution_channel IS NOT INITIAL.
     CALL FUNCTION 'GET_AVG_AMOUNT_2024'
       EXPORTING
-        distribution_channel = vbak-vtweg
+        distribution_channel = gv_distribution_channel
         startdate            = vbak-erdat
       IMPORTING
         average_amount       = lv_average_amount.
     .
+
+    gv_average_sales_order = lv_average_amount.
+
   ENDIF.
 
   IF gt_sales_item IS NOT INITIAL.

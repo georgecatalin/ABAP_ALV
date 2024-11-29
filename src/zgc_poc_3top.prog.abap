@@ -46,6 +46,6 @@ DATA: gv_current_line TYPE i,
       gv_previous_line TYPE i.
 
 DATA: gv_distribution_channel TYPE C LENGTH 5,
-      gv_start_date TYPE erdat.
+      gv_average_sales_order TYPE p DECIMALS 2.
 
 * Conditional formatting stuffs

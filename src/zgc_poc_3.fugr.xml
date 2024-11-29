@@ -17,7 +17,7 @@
        <DEFAULT>&apos;10&apos;</DEFAULT>
        <OPTIONAL>X</OPTIONAL>
        <REFERENCE>X</REFERENCE>
-       <TYP>VTWEG</TYP>
+       <TYP>P33_FORMAT_VERSION</TYP>
       </RSIMP>
       <RSIMP>
        <PARAMETER>STARTDATE</PARAMETER>

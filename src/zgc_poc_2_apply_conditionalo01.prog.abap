@@ -12,6 +12,7 @@ MODULE apply_conditional_formatting OUTPUT.
     IF gs_sales_item-itemcode CS gv_text_input.
 
       LOOP AT SCREEN.
+        screen-color = '5'.
         screen-intensified = 1.  " Choose desired color code
         MODIFY SCREEN.
       ENDLOOP.

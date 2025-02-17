@@ -27,7 +27,6 @@ MODULE apply_conditional_formatting OUTPUT.
     IF gs_sales_item-lineamount < lv_average_amount AND gs_sales_item-lineamount <> 0.
 
       LOOP AT SCREEN.
-        screen-color = '5'.
         screen-intensified = 1.  " Choose desired color code
         MODIFY SCREEN.
       ENDLOOP.

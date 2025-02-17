@@ -10,7 +10,7 @@ I shall be using several courses as basis for the applied learning, such as
   A great Udemy course on ABAP OOPS
 - https://www.youtube.com/watch?v=oACYWjWrXtY&list=PLM3lhmHjSeIQPF3RBbudAA-JLovQOsOJl&index=1
   
-  An exhaustive **Youtube playlist**.  For this one, I have attached an Excel Workbook in the repository to structure the content
+  An exhaustive **Youtube playlist**.  For this one, I have attached an Excel Workbook in the repository to structure its content, as it contains more than OOPS ABAP (Core ABAP, ABAP Dictionary and so on)
 
 
 

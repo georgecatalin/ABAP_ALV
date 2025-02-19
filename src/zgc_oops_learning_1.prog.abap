@@ -14,6 +14,7 @@ CLASS lcl_main DEFINITION.
    CLASS-DATA static_attribute_1 TYPE I.
 
    METHODS: method_1, method_2.
+   CLASS-METHODS: class_method_1.
 
 ENDCLASS.
 
@@ -23,17 +24,21 @@ CLASS lcl_main IMPLEMENTATION.
 METHOD method_1.
   age = 46.
   name = 'George'.
+  " static_attribute_1 = 2012. " inside instance methods one can access instance components as well as static components
+  WRITE: / 'This is an instance method'.
 ENDMETHOD.
 
 METHOD method_2.
     WRITE: / 'Age: ', age, 'Name: ', name.
 ENDMETHOD.
 
+METHOD class_method_1.
+  WRITE: / 'This is a class method'.
+  static_attribute_1 = 2013. " inside class methods one can access only static components
+ENDMETHOD.
+
+
 ENDCLASS.
-
-
-
-
 
 * how to use instance and static attributes
 START-OF-SELECTION.
@@ -57,8 +62,6 @@ WRITE: / 'Static attributes are shared by all objects, and can be accessed eithe
 CALL METHOD lo_object_1->method_1.
 CALL METHOD lo_object_1->method_2.
 
-
-
-
+CALL METHOD lcl_main=>class_method_1.
 
 END-OF-SELECTION.
